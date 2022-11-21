@@ -38,3 +38,37 @@ $ npm run preview
 ```
 
 Please check [vite deploy doc](https://vitejs.dev/guide/static-deploy.html#deploying-a-static-site)
+
+
+## Structure
+```
+App
+└── src
+    ├── assets
+    │   ├── css
+    │   ├── images    
+    │   ├── locales           (i18n locales)    
+    │   └── other             (other resource files like fonts, video, audio or etc)
+    ├── common                (common files)
+    │   ├── store             (redux store)     
+    │   ├── i18n              (react 18n next config)
+    │   ├── config            (config) 
+    │   └── other
+    ├── config                (config files)
+    ├── components            (common components)
+    ├── hook                  (custom hooks)
+    ├── layout
+    │   ├── dashboard         (dashboard layout)
+    │   └── other     
+    ├── pages
+    │   ├── home      
+    │   ├── crud     
+    │   │   ├── components    (child components)
+    │   │   │   └── comp   
+    │   │   ├── List.tsx
+    │   │   ├── Detail.tsx
+    │   │   └── Form.tsx
+    │   └── settings 
+    ├── services  
+    └── router
+```
